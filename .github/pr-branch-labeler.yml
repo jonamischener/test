@@ -1,7 +1,8 @@
-# Apply label "feature" if head matches "feature/*"
-feat:
-  head: "feature/*"
+wallet:
+  head: "dev/wallet/*"
+  
+core:
+  head: "dev/core/*"
 
-# Apply label "bugfix" if head matches one of "bugfix/*" or "hotfix/*"
-bugfix:
+fix:
   head: ["bugfix/*", "hotfix/*"]
