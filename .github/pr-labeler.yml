@@ -1,4 +1,0 @@
-wallet: dev/*
-core: dev/core/*
-fix: hotfix/*
-feat: feature/*
