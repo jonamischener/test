@@ -1,0 +1,3 @@
+wallet: dev/wallet/*
+core: dev/core/*
+fix: hotfix/*
