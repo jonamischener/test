@@ -1,4 +1,4 @@
-name: PR Branch Labeler
+name: PR Labeler
 
 on: pull_request_target
 
@@ -6,8 +6,18 @@ jobs:
   label_prs:
     runs-on: ubuntu-latest
     steps:
-    - name: Label PRs
+    - name: Branch name criteria
       if: github.event.action == 'opened' # Only run the action when the PR was first opened
       uses: ffittschen/pr-branch-labeler@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+  triage:
+    permissions:
+      contents: read
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+    - name: Path files criteria
+    - uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}
