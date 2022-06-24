@@ -1,9 +1,11 @@
 name: PR Labeler
 
-on: pull_request_target
-
 jobs:
+  on: pull_request, pull_request_target
   label_prs:
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
     - name: Branch name criteria
@@ -11,3 +13,8 @@ jobs:
       uses: ffittschen/pr-branch-labeler@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Path file criteria
+    - uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}
