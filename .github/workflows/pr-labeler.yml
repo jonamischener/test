@@ -1,7 +1,8 @@
 name: PR Labeler
 
+on: pull_request_target
+  
 jobs:
-  on: pull_request, pull_request_target
   label_prs:
     permissions:
       contents: read
