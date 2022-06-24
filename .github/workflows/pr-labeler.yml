@@ -15,6 +15,6 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Path file criteria
-    - uses: actions/labeler@v4
+      uses: actions/labeler@v4
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}
