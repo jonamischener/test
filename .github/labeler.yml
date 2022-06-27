@@ -1,9 +1,5 @@
-
-
-# Add 'label1' to any changes within 'example' folder or any subfolders
 wallet:
-- any: ['mobile/**/*']
+- any: ['mobile/**/*', 'packages/reserve-components/**/*', 'packages/reserve-core/**/*', 'packages/reserve-storybook/**/*']
 
-# Add 'label2' to any file changes within 'example2' folder
 core: 
-- any: ['server/**/*']
+- any: ['server/**/*', 'packages/reserve-core/**/*']
