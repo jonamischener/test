@@ -5,4 +5,4 @@ core:
   head: "dev/core/*"
 
 fix:
-  head: ["*fix*"]
+  head: ["bugfix/*", "hotfix/*", "dev/wallet/*fix*", "dev/core/*fix*"]
