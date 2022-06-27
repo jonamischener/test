@@ -1,5 +1,8 @@
 wallet:
-- all: ['mobile/**/*', 'packages/reserve-components/**/*', 'packages/reserve-core/**/*', 'packages/reserve-storybook/**/*']
+- any: ['mobile/**/*', 'packages/reserve-components/**/*']
 
 core: 
-- all: ['server/**/*', 'packages/reserve-core/**/*']
+- any: ['server/**/*']
+
+components:
+- any: ['packages/**/*']
